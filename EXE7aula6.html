@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 7</title>
+    <style>
+        .container{
+            display: flex;/*tira do vertical*/
+            flex-direction:row;/*ordem da linha*/
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 30px;
+
+        }
+        .card{
+            background-color: #27db48;
+            height: 150px;
+            width: 150px;
+            border-radius: 16px; 
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+        .card:hover{
+            transition: 0.3s;
+            border-radius: 0px;
+            background-color: aqua;
+        }
+        img:hover{
+            transition: 0.3s;
+            border-radius: 0px;
+        }
+        p{
+            margin-top: 4px;
+            margin-bottom: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            text-align: center;
+        }
+        img{
+            height: 95px;
+            width: 145px;
+            margin-top: 6px;
+            margin-left: 2px;
+            /* topo-esq, topo-dir, baixo-dir, baixo-esq */
+            border-radius: 0px 0px 16px 16px;
+; 
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Meu Caminho até a Faculdade</h1>
+    <div class="container">
+        <div class="card">
+            <p>Saio de Casa</p>
+            <img src="cachorro.jpg" alt="">
+        </div>
+        <div class="card">
+            <p>Pego o Primeiro Onibus</p>
+            <img src="images.jpg" alt="">
+        </div>
+        <div class="card">
+            <p>Chego no Padre pelágio</p>
+            <img src="PP.jpg" alt="">
+        </div>
+        <div class="card">
+            <p>Pego o Segundo Onibus</p>
+            <img src="o.jpg" alt="">
+        </div>
+        <div class="card">
+            <p>Chego na Praça da Bíblia</p>
+            <img src="PB.jpg" alt="">
+        </div>
+        <div class="card">
+            <p>Pego o Terceiro Onibus<p>
+            <img src="images.jpg" alt="">
+            </div>
+        <div class="card">
+            <p>Chego na escola</p>
+            <img src="download.png" alt="">
+        </div>
+        <div class="card">
+            <p>Entro em sala de Aula</p>
+            <img src="lab.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
